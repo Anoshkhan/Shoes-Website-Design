@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,900&family=Poppins:wght@400;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	margin:1.5em;
+	font-family: 'Poppins', sans-serif;
+
+
+}
+a{
+	text-decoration: none;
+	font-size: 1.3rem;
+}
+
+.hero-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('images/shoes.jpg');
+	background-size: cover;
+	background-position-x : 62%;
+	background-position-y : 10%;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: white;
+	height: 100vh;
+	width: 50%;
+	z-index: 999;
+	text-transform: uppercase;
+	transform: translateX(100%);
+	transition: transform .5s ease-in-out;
+}
+.nav-menu{
+	list-style: none;
+	padding: 0;
+	margin-top: 8em ;
+}
+.nav-menu a{
+	color: black;
+	padding: 0.75em 2em;
+	display: block;
+
+}
+.nav-menu a:hover{
+	background: #dcdcdc;
+	
+
+}
+
+
+.logo{
+	color: white;
+	font-weight: bold;
+	font-size: 1.3rem;
+	text-shadow: 5px 5px 5px black;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+
+
+}
+header svg{
+	width: 3em;
+	margin-top: .3em;
+	margin-right: 1em;
+	cursor: pointer;
+}
+h1{
+	font-size: 3rem;
+	margin-top: 2em;
+	line-height: 3.3rem;
+}
+.subhead{
+	font-size: 1.4rem;
+}
+section.hero{
+	color: white;
+	align-content: center;
+	width: 90%;
+	height: 90vh;
+	padding-top: 1em;
+
+
+}
+.down-arrow{
+
+		stroke: white;
+		width: 1em;
+		position: absolute;
+		bottom: 2em;
+	}
+section.hero svg path{
+	fill: white;
+}
+
+.close{
+	float: right;
+	margin: 1em;
+	width: 2.5em;
+}
+.more-info{
+	padding-top: 2em;
+}
+.more-info img{
+	width: 100%;
+	object-fit: cover;
+	height: 15em;
+}
+.title{
+	font-weight: bold;
+	font-size: 1.4rem;
+	margin-top: 1em;
+	margin-left: .5em;
+}
+.desc{
+	line-height: 1.5rem;
+	margin: 1em .5em;
+}
