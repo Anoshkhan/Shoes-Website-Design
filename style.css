@@ -26,6 +26,7 @@ a{
 	width: 100%;
 	height: 100vh;
 	z-index: -1;
+	animation: loadimage 2s forwards;
 
 }
 
@@ -72,7 +73,7 @@ header{
 
 }
 header svg{
-	width: 3em;
+	width: 2.5em;
 	margin-top: .3em;
 	margin-right: 1em;
 	cursor: pointer;
@@ -81,9 +82,11 @@ h1{
 	font-size: 3rem;
 	margin-top: 2em;
 	line-height: 3.3rem;
+	animation: headani 4s forwards;
 }
 .subhead{
 	font-size: 1.4rem;
+	
 }
 section.hero{
 	color: white;
@@ -101,6 +104,7 @@ section.hero{
 		position: absolute;
 		bottom: 2em;
 		height: 8em;
+		animation: moveArrow 1s alternate reverse;
 	}
 section.hero svg path{
 	fill: white;
@@ -129,6 +133,12 @@ section.hero svg path{
 	line-height: 1.5rem;
 	margin: 1em .5em;
 }
+.open-nav{
+	transform: translateX(0%);
+}
+
+
+
 @media only screen and (max-height: 750px){
 	h1{
 		font-size: 2.7rem;
@@ -249,4 +259,31 @@ section.hero svg path{
 		margin: 8em 10em;
 	}
 
+}
+@keyframes loadimage{
+	1%{
+		clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+	}
+	100%{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+}
+
+@keyframes headani{
+	from{
+		opacity: 0;
+		margin-left: -1em;
+	}
+	to{
+		opacity: 1;
+		margin-left: 0;
+	}
+}
+@keyframes moveArrow{
+	from{
+		margin-left: -1em;
+	}
+	to{
+		margin-left: 0;
+	}
 }
