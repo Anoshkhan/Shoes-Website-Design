@@ -97,15 +97,6 @@ section.hero{
 
 
 }
-.down-arrow{
-
-		stroke: white;
-		width: 1em;
-		position: absolute;
-		bottom: 2em;
-		height: 8em;
-		animation: moveArrow 1s alternate reverse;
-	}
 section.hero svg path{
 	fill: white;
 }
